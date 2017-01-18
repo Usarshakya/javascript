@@ -3,12 +3,16 @@
 	<head>
 	</head>
 	<body>
-		<h1>Script Tag</h1>
+		<h1>JS Change HTML Content</h1>
 		<p>JS is defined inside script tag</p>
-		<p id="demo"></p>
-		<button onclick="function()">Show</button>
-		<script type="text/javascript">
-			document.getElementById('demo').innerHTML="i was defined inside script tag";
-		</script>
+		<p id="demo">Change Me.</p>
+		<button type="button" onclick="change()">Show</button>
+			<script>
+				function change(){
+					document.getElementById('demo').innerHTML = "I got changed.";
+				}
+			</script>		
 	</body>
 </html>
+
+
