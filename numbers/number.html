@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
@@ -6,17 +5,18 @@
 	<body>
 		<p>numbers are considered accurate upto 15 digits</p>
 		<p id="demo"></p>
-		<p>floating points arenot always accurate</p>
 		<p id="demo1"></p>
 		<p>representation of hexdeimalnumber</p>
-		<p id="demo2"></p>
+		<p id="demo2"></p>,2
 		<p>representing numberas bas 10,8,16</p>
 		<p id="demo3"></p>
+		
 		<script type="text/javascript">
 			var x=999999999999999;
 			var y=9999999999999999;
 			var a=.2+.5;
 			var z=258;
+			
 
 			//numbers are considered accurate upto 15 digits
 			document.getElementById('demo').innerHTML=x +"<br>"+ y;
@@ -27,10 +27,12 @@
 			//representation of hexdeimalnumber
 			document.getElementById('demo2').innerHTML="0xFF"+0xFF;
 
-			//representing numberas bas 10,8,16
+			//representing numberas bas 10,8,16,2
 			document.getElementById("demo3").innerHTML = "128 = " + z + " Decimal, " +
 	    z.toString(16) + " Hexadecimal, " + z.toString(8) + " Octal, " +
-	    z.toString(2) + " Binary."
+	    z.toString(2) + " Binary.";
+
+	   
 
 		</script>
 
