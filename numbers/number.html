@@ -10,10 +10,13 @@
 		<p id="demo1"></p>
 		<p>representation of hexdeimalnumber</p>
 		<p id="demo2"></p>
+		<p>representing numberas bas 10,8,16</p>
+		<p id="demo3"></p>
 		<script type="text/javascript">
 			var x=999999999999999;
 			var y=9999999999999999;
 			var a=.2+.5;
+			var z=258;
 
 			//numbers are considered accurate upto 15 digits
 			document.getElementById('demo').innerHTML=x +"<br>"+ y;
@@ -22,7 +25,13 @@
 			document.getElementById('demo1').innerHTML="a=.2+.5="+a;
 
 			//representation of hexdeimalnumber
-			document.getElementById('demo2').innerHTML="0xFF="+0xFF;
+			document.getElementById('demo2').innerHTML="0xFF"+0xFF;
+
+			//representing numberas bas 10,8,16
+			document.getElementById("demo3").innerHTML = "128 = " + z + " Decimal, " +
+	    z.toString(16) + " Hexadecimal, " + z.toString(8) + " Octal, " +
+	    z.toString(2) + " Binary."
+
 		</script>
 
 
