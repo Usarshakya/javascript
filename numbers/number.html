@@ -6,14 +6,19 @@
 	<body>
 		<p>numbers are considered accurate upto 15 digits</p>
 		<p id="demo"></p>
-		
+		<p>floating points arenot always accurate</p>
+		<p id="demo1"></p>
+
 		<script type="text/javascript">
 			var x=999999999999999;
 			var y=9999999999999999;
-			
+			var a=.2+.5;
 
 			//numbers are considered accurate upto 15 digits
 			document.getElementById('demo').innerHTML=x +"<br>"+ y;
+
+			//floating points arenot always accurate			
+			document.getElementById('demo1').innerHTML="a=.2+.5="+a;
 
 			
 		</script>
